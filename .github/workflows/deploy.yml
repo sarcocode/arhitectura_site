@@ -1,0 +1,24 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Запускается при пуше в ветку main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # GitHub будет использовать Ubuntu для запуска
+
+    steps:
+      - name: Скачиваем проект
+        uses: actions/checkout@v3  # Стандартный способ получить файлы из репозитория
+
+      - name: Копируем файлы на сервер
+        uses: appleboy/scp-action@v0.1.4  # GitHub Action для SCP (копирования по SSH)
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "./*"
+          target: "/var/www/my-site"
+
