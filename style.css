@@ -1,0 +1,89 @@
+/* ЗАДНИЙ ФОН */
+html, body {
+  background-image: url('images/bg.png'); /* путь к твоей картинке */
+  background-size: cover; /* чтобы растягивалась на весь экран */
+  background-position: center; /* центрировать */
+  background-repeat: no-repeat; /* не повторять */
+  background-attachment: scroll; /* фон остается при скролле */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ЗАГРУЗОЧНЫЙ ЭКРАН */
+#overlayer { 
+  width:100%;
+  height:100%;  
+  position:fixed;
+  z-index:20;
+  background:#a30b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center; /*Это выравнивает крутилку по центру экрана*/
+  /* Это фон на котором будет крутиться крутилка*/
+}
+  .loading-text {
+  font-family: 'Montserrat', sans-serif; /* Здесь можно поменять шрифт загрузочного текста */
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+/* ЗАГОЛОВОК И ИКОНКА ВК */
+
+/* Это в целом задает расопложение заголовка и иконки ВК */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: transparent;
+}
+
+/* Это отдельно задает стиль заголовка */
+.logo h2 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #fff;
+  margin: 0;
+}
+
+/* Это задает стиль иконки ВК */
+.social-block a{
+  color: #fff; /* цвет иконки белый */
+  font-size: 2em; /* размер иконки */
+  text-decoration: none; /* убрать подчеркивание */
+}
+
+/* Убирает подчеркивание ссылки */
+a {
+  text-decoration: none;
+}
+
+#text_on_picture {
+  padding-top: 100px;
+  padding-left: 20px;
+  margin: 20px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #fff;
+  text-align: left;
+  width: 90%; /* чтобы текст не вылезал за край */
+}
+
+.about_band {
+  padding-top: 100px;
+  padding-left: 20px;
+  margin: 200px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #000000;
+  text-align: left;
+  width: 90%; /* чтобы текст не вылезал за край */
+}

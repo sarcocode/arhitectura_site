@@ -1,1 +1,62 @@
-<!DOCTYPE html><html><head><title>Мой сайт</title></head><body><h1>privet</h1></body></html>
+<!DOCTYPE html>
+<html> 
+<head> <!-- Здесь невидимая часть но без нее никак, здесь подключаются и описываются важные моменты-->
+	<title>АРХИТЕКТУРА</title> <!--Это заголовок сайта он отображается или название вкладки по другому-->
+	<meta charset="utf-8"> <!--Это кодировка поддерживает русский и английский-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Эта штука говорит что ширина сайта равна ширине устройства, например чтобы на мобилках не слетало-->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!--Эта штука позволяет на мобилках сайту вести себя как приложение (запускаться в полном экране)-->
+    <meta name="author" content="sarco"> <!--Здесь указывается автор этого сайта-->
+    <meta name="keywords" content="music band, rap, russian, architecture"> <!--Ключевые слова для поиска-->
+    <meta name="description" content="Site about russian hip-hop bans from Zhigulevsk"> <!--Описание сайта-->
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/> <!--Подключает файл css нормалайз который сбрасывает стили браузеров для единообразия-->
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css"> <!--На сколько я понял это подключает миникартинки через шрифт типо как смайлики в тг-->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css"/> <!--Подключает сторонние стили и плагины-->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--Основной файл стилей сайта, тут то мы и будем развлекаться-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Предварительное подключение к сервису Google Fonts для ускорения загрузки -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 	<!-- То же, для правильной работы шрифтов -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700,900;1,900&family=Playfair+Display:wght@700&display=swap"> <!-- Подключаем два шрифта из Google Fonts: Montserrat и Playfair Display -->
+</head>
+
+<body> <!--Здесь уже видимая часть сайта-->
+
+<!--Эта та самая крутилка во время прогрузки сайта-->
+<div id="overlayer"> 
+	<span class="loading-text">ARHITEKTURA</span>
+</div>      
+
+<!-- Это блок с заголовком и ссылкой на ВК -->
+<header id="header">
+    <div class="logo">
+        <a href="index.html">
+            <h2>архитектура</h2>
+        </a>
+    </div>
+    <div class="social-block">
+        <a href="https://vk.com/arhitektura69" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-vk"></i>
+        </a>
+    </div>
+</header>
+
+<!-- Это код на джаваскрипт для того чтобы когда вся страница прогрузилась запускался сайт  -->
+<script>
+  window.addEventListener('load', function () {
+    document.getElementById('overlayer').style.display = 'none';
+  });
+</script>
+
+<!-- Это текст на фоне, можно его потом заменить -->
+<header id="text_on_picture">
+    <h2>А теперь вспомни, как давно ты рыбачил?</h2>
+</header>
+
+<section class="about_band">
+    <div>
+        <h2>ПИПКА</h2>
+    </div>
+</section>
+
+</body>
