@@ -6,8 +6,8 @@ html, body {
   background-repeat: no-repeat; /* не повторять */
   background-attachment: scroll; /* фон остается при скролле */
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* ЗАГРУЗОЧНЫЙ ЭКРАН */
@@ -24,7 +24,7 @@ html, body {
 }
   .loading-text {
   font-family: 'Montserrat', sans-serif; /* Здесь можно поменять шрифт загрузочного текста */
-  font-size: 30px;
+  font-size: 200%;
   color: white;
   font-weight: 700;
 }
@@ -36,13 +36,15 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding-right: 4%;
+  padding-left: 3%;
+  padding-top: 2%;
   background-color: transparent;
 }
 
 /* Это отдельно задает стиль заголовка */
 .logo h2 {
-  font-size: 50px;
+  font-size: 300%;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -63,10 +65,10 @@ a {
 }
 
 #text_on_picture {
-  padding-top: 100px;
-  padding-left: 20px;
-  margin: 20px;
-  font-size: 50px;
+  padding-top: 10%;
+  padding-left: 2%;
+  margin: 2%;
+  font-size: 340%;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -75,15 +77,13 @@ a {
   width: 90%; /* чтобы текст не вылезал за край */
 }
 
-.about_band {
-  padding-top: 100px;
-  padding-left: 20px;
-  margin: 200px;
-  font-size: 50px;
+.about_band h2 {
+  padding-top: 20%;
+  padding-left: 2%;
+  font-size: 350%;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: #000000;
   text-align: left;
-  width: 90%; /* чтобы текст не вылезал за край */
 }
