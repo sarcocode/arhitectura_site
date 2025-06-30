@@ -6,45 +6,42 @@ html, body {
   background-repeat: no-repeat; /* не повторять */
   background-attachment: scroll; /* фон остается при скролле */
   height: 100%;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* базовый размер шрифта */
 }
 
 /* ЗАГРУЗОЧНЫЙ ЭКРАН */
 #overlayer { 
-  width:100%;
-  height:100%;  
-  position:fixed;
-  z-index:20;
-  background:#a30b0b;
+  width: 100%;
+  height: 100%;  
+  position: fixed;
+  z-index: 20;
+  background: #a30b0b;
   display: flex;
   justify-content: center;
-  align-items: center; /*Это выравнивает крутилку по центру экрана*/
-  /* Это фон на котором будет крутиться крутилка*/
+  align-items: center; /* выравнивание крутилки по центру */
 }
-  .loading-text {
-  font-family: 'Montserrat', sans-serif; /* Здесь можно поменять шрифт загрузочного текста */
-  font-size: 200%;
+.loading-text {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 2rem; 
   color: white;
   font-weight: 700;
 }
 
 /* ЗАГОЛОВОК И ИКОНКА ВК */
-
-/* Это в целом задает расопложение заголовка и иконки ВК */
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 4%;
-  padding-left: 3%;
-  padding-top: 2%;
+  padding-right: 4rem;  
+  padding-left: 3rem;  
+  padding-top: 2rem;   
   background-color: transparent;
 }
 
-/* Это отдельно задает стиль заголовка */
 .logo h2 {
-  font-size: 300%;
+  font-size: 3rem;  
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -52,35 +49,33 @@ html, body {
   margin: 0;
 }
 
-/* Это задает стиль иконки ВК */
-.social-block a{
-  color: #fff; /* цвет иконки белый */
-  font-size: 2em; /* размер иконки */
-  text-decoration: none; /* убрать подчеркивание */
+.social-block a {
+  color: #fff;
+  font-size: 2rem; 
+  text-decoration: none;
 }
 
-/* Убирает подчеркивание ссылки */
 a {
   text-decoration: none;
 }
 
 #text_on_picture {
-  padding-top: 10%;
-  padding-left: 2%;
-  margin: 2%;
-  font-size: 340%;
+  padding-top: 7rem;  
+  padding-left: 1rem; 
+  margin: 0.5rem;       
+  font-size: 3.4rem;    
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: #fff;
   text-align: left;
-  width: 90%; /* чтобы текст не вылезал за край */
+  width: 90%;
 }
 
 .about_band h2 {
-  padding-top: 20%;
-  padding-left: 2%;
-  font-size: 350%;
+  padding-top: 19rem;   
+  padding-left: 2rem; 
+  font-size: 3.5rem; 
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
