@@ -1,20 +1,14 @@
 /* ЗАДНИЙ ФОН */
 html, body {
-  background-image: url('images/bg.png'); /* путь к твоей картинке */
-  background-size: cover; /* чтобы растягивалась на весь экран */
-  background-position: center; /* центрировать */
-  background-repeat: no-repeat; /* не повторять */
-  background-attachment: scroll; /* фон остается при скролле */
+  background-image: url('images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 16px; /* базовый размер шрифта */
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 12px; /* уменьшаем шрифт для экранов <= 600px */
-  }
+  font-size: 16px;
 }
 
 /* ЗАГРУЗОЧНЫЙ ЭКРАН */
@@ -26,11 +20,11 @@ html, body {
   background: #a30b0b;
   display: flex;
   justify-content: center;
-  align-items: center; /* выравнивание крутилки по центру */
+  align-items: center;
 }
 .loading-text {
   font-family: 'Montserrat', sans-serif; 
-  font-size: 2rem; 
+  font-size: clamp(1rem, 4vw, 2rem); 
   color: white;
   font-weight: 700;
 }
@@ -40,14 +34,14 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 4rem;  
-  padding-left: 3rem;  
-  padding-top: 2rem;   
+  padding-right: clamp(1rem, 5vw, 4rem);
+  padding-left: clamp(1rem, 4vw, 3rem);
+  padding-top: clamp(1rem, 3vw, 2rem);
   background-color: transparent;
 }
 
 .logo h2 {
-  font-size: 3rem;  
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -57,7 +51,7 @@ html, body {
 
 .social-block a {
   color: #fff;
-  font-size: 2rem; 
+  font-size: clamp(1.5rem, 5vw, 2rem);
   text-decoration: none;
 }
 
@@ -66,10 +60,10 @@ a {
 }
 
 #text_on_picture {
-  padding-top: 7rem;  
-  padding-left: 1rem; 
-  margin: 0.5rem;       
-  font-size: 3.4rem;    
+  padding-top: clamp(2rem, 10vw, 7rem);
+  padding-left: clamp(0.5rem, 4vw, 1rem);
+  margin: clamp(0.25rem, 2vw, 0.5rem);
+  font-size: clamp(2rem, 7vw, 3.4rem);
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
@@ -79,9 +73,9 @@ a {
 }
 
 .about_band h2 {
-  padding-top: 19rem;   
-  padding-left: 2rem; 
-  font-size: 3.5rem; 
+  padding-top: clamp(5rem, 20vw, 19rem);
+  padding-left: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
